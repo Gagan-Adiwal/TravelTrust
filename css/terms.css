@@ -1,0 +1,205 @@
+/* ========================= */
+/* TERMS SECTION */
+/* ========================= */
+
+/* ========================= */
+/* TITLE (Responsive) */
+/* ========================= */
+
+.terms-section h1{
+
+font-size:clamp(26px, 4vw, 44px);
+/* mobile:26px tablet:32px desktop:44px */
+
+color:#003B73;
+
+text-align:center;
+
+margin-bottom:40px;
+
+font-weight:700;
+
+}
+
+
+/* ========================= */
+/* SUBHEADINGS */
+/* ========================= */
+
+.terms-card h2{
+
+font-size:clamp(18px, 2.5vw, 24px);
+/* mobile:18px desktop:24px */
+
+color:#0A66C2;
+
+margin-top:25px;
+
+margin-bottom:10px;
+
+}
+
+
+/* ========================= */
+/* PARAGRAPH TEXT */
+/* ========================= */
+
+.terms-card p{
+
+font-size:clamp(14px, 1.5vw, 18px);
+/* mobile:14px tablet:16px desktop:18px */
+
+line-height:1.8;
+
+color:#444;
+
+}
+
+
+/* ========================= */
+/* CARD PADDING RESPONSIVE */
+/* ========================= */
+
+.terms-card{
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+
+/* ========================= */
+/* SECTION PADDING */
+/* ========================= */
+
+.terms-section{
+
+padding-top:clamp(90px, 10vw, 120px);
+
+padding-left:clamp(15px, 5vw, 60px);
+
+padding-right:clamp(15px, 5vw, 60px);
+
+padding-bottom:clamp(40px, 6vw, 80px);
+
+}
+
+
+
+
+/* ========================= */
+/* LARGE DESKTOP */
+/* ========================= */
+
+@media(min-width:1400px){
+
+.terms-container{
+
+max-width:1300px;
+
+}
+
+.terms-card{
+
+padding:60px;
+
+}
+
+}
+
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media(max-width:992px){
+
+.terms-section h1{
+
+font-size:36px;
+
+}
+
+.terms-card{
+
+padding:35px;
+
+}
+
+.terms-card p{
+
+font-size:16px;
+
+}
+
+}
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width:768px){
+
+.terms-section{
+
+padding-top:100px;
+
+padding-left:20px;
+padding-right:20px;
+
+}
+
+.terms-section h1{
+
+font-size:28px;
+
+margin-bottom:25px;
+
+}
+
+.terms-card{
+
+padding:25px;
+
+border-radius:12px;
+
+}
+
+.terms-card h2{
+
+font-size:18px;
+
+}
+
+.terms-card p{
+
+font-size:15px;
+
+line-height:1.7;
+
+}
+
+}
+
+
+/* ========================= */
+/* SMALL MOBILE */
+/* ========================= */
+
+@media(max-width:480px){
+
+.terms-section h1{
+
+font-size:24px;
+
+}
+
+.terms-card{
+
+padding:20px;
+
+}
+
+}

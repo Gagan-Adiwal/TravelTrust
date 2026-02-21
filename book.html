@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TravelTrust - Book Tour</title>
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/book.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">TravelTrust</div>
+
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="book.html">Book Tour</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="terms.html">Terms</a></li>
+
+</ul>
+
+</div>
+
+</header>
+
+
+<section class="book-section">
+
+<h1>Book Your Tour</h1>
+
+<p class="subtitle">Select your destination and book your dream tour</p>
+
+
+<!-- INDIA DESTINATIONS -->
+
+<h2 class="region-title">India Destinations</h2>
+
+<div class="tour-cards">
+
+<div class="tour-card" onclick="selectTour('Kashmir')">
+
+<img src="images/kashmir.jpg">
+
+<h3>Kashmir</h3>
+
+</div>
+
+<div class="tour-card" onclick="selectTour('Manali')">
+
+<img src="images/manali.jpg">
+
+<h3>Manali</h3>
+
+</div>
+
+<div class="tour-card" onclick="selectTour('Dehradun')">
+
+<img src="images/dehradun.jpg">
+
+<h3>Dehradun</h3>
+
+</div>
+
+</div>
+
+
+<!-- INTERNATIONAL DESTINATIONS -->
+
+<h2 class="region-title">International Destinations</h2>
+
+<div class="tour-cards">
+
+<div class="tour-card" onclick="selectTour('Bali')">
+
+<img src="images/bali.jpg">
+
+<h3>Bali</h3>
+
+</div>
+
+<div class="tour-card" onclick="selectTour('Dubai')">
+
+<img src="images/dubai.jpg">
+
+<h3>Dubai</h3>
+
+</div>
+
+<div class="tour-card" onclick="selectTour('Thailand')">
+
+<img src="images/thailand.jpg">
+
+<h3>Thailand</h3>
+
+</div>
+
+<div class="tour-card" onclick="selectTour('Singapore')">
+
+<img src="images/singapore.jpg">
+
+<h3>Singapore</h3>
+
+</div>
+
+</div>
+
+
+<!-- BOOKING FORM -->
+
+<div class="form-container">
+
+<h2>Complete Your Booking</h2>
+
+<form>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="number" placeholder="Mobile No." required>
+
+<input type="text" id="tourInput" placeholder="Selected Tour" required>
+
+<input type="date" required>
+
+<button type="submit">Book Tour</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2025 TravelTrust. All rights reserved.</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

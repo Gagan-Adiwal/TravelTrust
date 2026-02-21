@@ -1,0 +1,130 @@
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#ffffff;
+color:#222;
+line-height:1.6;
+}
+
+/* FIX FOR FIXED NAVBAR */
+
+section{
+padding-top:80px;
+}
+
+/* NAVBAR */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#ffffff;
+box-shadow:0 2px 15px rgba(0,0,0,0.08);
+z-index:1000;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:16px 8%;
+}
+
+.logo{
+font-size:26px;
+font-weight:bold;
+color:#0A66C2;
+}
+
+/* NAV LINKS */
+
+.nav-links{
+display:flex;
+list-style:none;
+}
+
+.nav-links li{
+margin-left:28px;
+}
+
+.nav-links a{
+text-decoration:none;
+font-weight:600;
+color:#003B73;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#0A66C2;
+}
+
+/* MOBILE MENU BUTTON */
+
+.menu-btn{
+font-size:30px;
+display:none;
+cursor:pointer;
+color:#0A66C2;
+}
+
+/* MOBILE NAV */
+
+@media(max-width:768px){
+
+.menu-btn{
+display:block;
+}
+
+.nav-links{
+
+position:absolute;
+top:65px;
+right:0;
+width:100%;
+background:#ffffff;
+
+flex-direction:column;
+align-items:center;
+
+display:none;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.nav-links.active{
+display:flex;
+}
+
+.nav-links li{
+margin:18px 0;
+}
+
+}
+
+/* FOOTER */
+
+footer{
+background:#003B73;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:0px;
+}
+
+footer p{
+font-size:15px;
+}
+
+/* RESPONSIVE SPACING FIX */
+
+section{
+padding-top:90px;
+}

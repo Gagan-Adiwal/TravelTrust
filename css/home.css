@@ -1,0 +1,656 @@
+/* ========================= */
+/* HERO SECTION */
+/* ========================= */
+
+.hero{
+
+min-height:calc(100vh - 70px); /* subtract navbar height */
+
+display:flex;
+align-items:center;
+
+background:
+linear-gradient(135deg,#eaf4ff,#ffffff);
+
+padding:40px 8% 40px; /* reduced top & bottom */
+
+}
+
+/* HERO CONTAINER */
+
+.hero-container{
+
+display:flex;
+
+align-items:center;
+justify-content:space-between;
+
+max-width:1200px;
+
+margin:auto;
+
+gap:60px;
+
+}
+
+/* HERO TEXT */
+
+.hero-text{
+
+flex:1;
+
+}
+
+.hero-text h1{
+
+font-size:52px;
+
+color:#003B73;
+
+margin-bottom:20px;
+
+line-height:1.2;
+
+font-weight:700;
+
+}
+
+.hero-text p{
+
+font-size:18px;
+
+color:#444;
+
+margin-bottom:30px;
+
+}
+
+/* BUTTON */
+
+.btn{
+
+display:inline-block;
+
+padding:14px 32px;
+
+background:#0A66C2;
+
+color:white;
+
+border-radius:30px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:0.3s;
+
+box-shadow:0 4px 15px rgba(10,102,194,0.3);
+
+}
+
+.btn:hover{
+
+background:#003B73;
+
+transform:translateY(-2px);
+
+}
+
+/* HERO IMAGE */
+
+.hero-image{
+
+flex:1;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.hero-image img{
+
+width:100%;
+
+max-width:500px;
+
+animation: float 6s ease-in-out infinite;
+
+}
+
+/* FLOAT ANIMATION */
+
+@keyframes float{
+
+0%{ transform:translateY(0); }
+
+50%{ transform:translateY(-20px); }
+
+100%{ transform:translateY(0); }
+
+}
+
+/* MOBILE RESPONSIVE HERO FIX */
+
+@media(max-width:768px){
+
+.hero{
+
+padding:20px 20px 30px;
+
+min-height:auto;
+
+}
+
+/* stack vertically */
+
+.hero-container{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+/* IMAGE FIRST */
+
+.hero-image{
+
+order:1;
+
+margin-bottom:20px;
+
+}
+
+/* TEXT SECOND */
+
+.hero-text{
+
+order:2;
+
+}
+
+/* resize image */
+
+.hero-image img{
+
+max-width:280px;
+
+width:100%;
+
+}
+
+/* resize text */
+
+.hero-text h1{
+
+font-size:28px;
+
+}
+
+.hero-text p{
+
+font-size:16px;
+
+}
+
+}
+
+/* ========================= */
+/* TOURS SECTION */
+/* ========================= */
+
+.tours{
+
+padding:25px 8%;
+
+background:#f8fbff;
+
+text-align:center;
+
+}
+
+.tours h2{
+
+font-size:36px;
+
+color:#003B73;
+
+margin-bottom:40px;
+
+}
+
+
+/* CARDS GRID */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+
+/* CARD */
+
+.card{
+
+background:white;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+transition:0.3s;
+
+cursor:pointer;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+
+}
+
+
+/* CARD IMAGE */
+
+.card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+}
+
+
+/* CARD TITLE */
+
+.card h3{
+
+padding:20px;
+
+color:#003B73;
+
+font-size:20px;
+
+font-weight:600;
+
+}
+
+
+/* ========================= */
+/* TABLET RESPONSIVE */
+/* ========================= */
+
+@media(max-width:992px){
+
+.hero-text h1{
+
+font-size:40px;
+
+}
+
+.hero-image img{
+
+max-width:400px;
+
+}
+
+}
+
+
+/* ========================= */
+/* MOBILE RESPONSIVE */
+/* ========================= */
+
+@media(max-width:768px){
+
+.hero{
+
+padding:140px 20px 80px;
+
+}
+
+.hero-container{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.hero-text h1{
+
+font-size:30px;
+
+}
+
+.hero-text p{
+
+font-size:16px;
+
+}
+
+.hero-image{
+
+margin-top:30px;
+
+}
+
+.hero-image img{
+
+max-width:300px;
+
+}
+
+.tours h2{
+
+font-size:28px;
+
+}
+
+}
+
+
+/* ========================= */
+/* SMALL MOBILE */
+/* ========================= */
+
+@media(max-width:480px){
+
+.hero-text h1{
+
+font-size:24px;
+
+}
+
+.hero-text p{
+
+font-size:14px;
+
+}
+
+.hero-image img{
+
+max-width:240px;
+
+}
+
+.card img{
+
+height:180px;
+
+}
+
+}
+
+
+/* ========================= */
+/* COMMON */
+/* ========================= */
+
+.section-sub{
+color:#666;
+margin-bottom:30px;
+}
+
+
+/* ========================= */
+/* TRENDING */
+/* ========================= */
+
+.trending{
+
+padding:80px 8%;
+background:#f8fbff;
+
+}
+
+.trending-grid{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+
+}
+
+.trend-card{
+
+position:relative;
+border-radius:15px;
+overflow:hidden;
+cursor:pointer;
+
+}
+
+.trend-card.large{
+
+grid-column:span 1;
+
+}
+
+.trend-card img{
+
+width:100%;
+height:220px;
+object-fit:cover;
+
+}
+
+.trend-overlay{
+
+position:absolute;
+bottom:0;
+width:100%;
+padding:20px;
+color:white;
+background:linear-gradient(transparent,rgba(0,0,0,0.7));
+
+}
+
+.trend-overlay h3{
+
+margin:0;
+
+}
+
+
+/* ========================= */
+/* EXPLORE SCROLL */
+/* ========================= */
+
+.explore{
+
+padding:80px 8%;
+
+}
+
+.explore-scroll{
+
+display:flex;
+gap:20px;
+overflow-x:auto;
+
+}
+
+.explore-card{
+
+min-width:220px;
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+.explore-card img{
+
+width:100%;
+height:140px;
+object-fit:cover;
+
+}
+
+.explore-card h3{
+
+margin:10px;
+
+}
+
+.explore-card p{
+
+margin:0 10px 15px;
+color:#666;
+
+}
+
+
+/* ========================= */
+/* PLANNER */
+/* ========================= */
+
+.planner{
+
+padding:80px 8%;
+background:#f8fbff;
+
+}
+
+.planner-tags{
+
+margin-bottom:20px;
+
+}
+
+.tag{
+
+display:inline-block;
+padding:10px 20px;
+margin:5px;
+border-radius:20px;
+background:#eaf4ff;
+cursor:pointer;
+
+}
+
+.tag.active{
+
+background:#0A66C2;
+color:white;
+
+}
+
+.planner-scroll{
+
+display:flex;
+gap:20px;
+overflow-x:auto;
+
+}
+
+.planner-card{
+
+min-width:220px;
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+.planner-card img{
+
+width:100%;
+height:140px;
+object-fit:cover;
+
+}
+
+.planner-card h3{
+
+margin:10px;
+
+}
+
+.planner-card p{
+
+margin:0 10px 15px;
+color:#666;
+
+}
+
+
+/* ========================= */
+/* HOME CONTACT */
+/* ========================= */
+
+.home-contact{
+
+padding:80px 8%;
+text-align:center;
+
+}
+
+.home-contact form{
+
+max-width:500px;
+margin:auto;
+background:#EAF4FF;
+padding:30px;
+border-radius:15px;
+
+}
+
+.home-contact input,
+.home-contact textarea{
+
+width:100%;
+padding:14px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ccc;
+
+}
+
+.home-contact button{
+
+padding:14px;
+background:#0A66C2;
+color:white;
+border:none;
+border-radius:25px;
+width:100%;
+
+}
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width:768px){
+
+.trending-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
